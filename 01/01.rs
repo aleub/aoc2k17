@@ -20,13 +20,7 @@ fn part1() {
 }
 
 fn get_next_index(index: usize, length: usize, step: usize) -> usize{
-    let mut next_index = index + step;
-
-    if index + step >= length {
-        next_index = (next_index) % step
-    }
-
-    return next_index;
+    return (index + step) % length;
 }
 
 fn part2() {
